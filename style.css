@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Bree Serif";
+  src: url(BreeSerif-Regular.otf);
+}
+
+body {
+  font-family: "Bree Serif", 'Helvetica';
+  font-size: 20px;
+  background: #FCD73F;
+  color: black;
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+
+a, a:visited {
+  color: black;
+}
+
+header, footer {
+  background-image: url(pattern.png);
+  height: 40px;
+  width: 100%;
+  margin: 25px 0;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+article {
+  margin: 20px auto;
+  width: 400px;
+}
+
+img {
+  display:block;
+  margin:auto;
+}
+
+@-webkit-keyframes move {
+   from {
+     background-position: 0 0;
+   }
+   to {
+     background-position: 0 40px;
+   }
+}
+
+@keyframes move {
+   from {
+     background-position: 0 0;
+   }
+   to {
+     background-position: 0 40px;
+   }
+}
